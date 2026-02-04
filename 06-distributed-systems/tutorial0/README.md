@@ -16,7 +16,7 @@ During this tutorial, we will learn few things like:
 > and see the documentation or test. You will see `Action` if you should
 > run a command, write a program, or something similar. You will see `Question` when there is a question to provide an answer to.
 
-## VM deployment (~15 minutes)
+## 1. VM deployment (~15 minutes)
 
 You need to create a VM using a Linux-based distribution of your choosing, e.g. debian, ubuntu, kali, etc.
 
@@ -28,14 +28,14 @@ To create a VM you can use one of the following VMMs:
   - MS Hyperv: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-machine-in-hyper-v?tabs=hyper-v-manager
   - WSL v2
 
-## Before you start
+## 2. Before you start
 
 I recommend that you create a text file with your favorite editor where you will continuously copy the commands and
 their output to help you with your Lab report.
 
-## Environment Setup (~30 minutes)
+## 3. Environment Setup (~30 minutes)
 
-### Linux Namespaces, Cgroups & Docker
+### 3.1. Linux Namespaces, Cgroups & Docker
 
 `Discover`
 
@@ -51,7 +51,7 @@ Explore these links
 - What are the main components of Docker ?
 - What are the technologies that Docker uses under the hood ?
 
-### Install Docker Engine (including Compose)
+### 3.2. Install Docker Engine (including Compose)
 
 `Action` + `Discover`
 
@@ -87,7 +87,7 @@ docker compose version
 
 - What is Docker Compose ?
 
-### Docker CLI
+### 3.3. Docker CLI
 
 `Action`
 
@@ -107,7 +107,7 @@ docker --help
 - What is the command that can let you execute a command inside a running container ?
 - What is the command that can let you download a container image ?
 
-## What is a container ? (~45 minutes)
+## 4. What is a container ? (~45 minutes)
 
 A container is simply another process on your system with some specific configurations that are applied to make sure that:
   - the containerized process is **isolated** from the rest of the system
@@ -115,7 +115,7 @@ A container is simply another process on your system with some specific configur
 
 resulting in a "sandboxed" program that acts as an independent system.
 
-### Containers & Processes
+### 4.1. Containers & Processes
 
 `Action`
 
@@ -206,7 +206,7 @@ docker exec httpd route
 
 > Hint: to convert hex to decimal you can use `echo $((16#11))` which will convert hex 11 to decimal for example.
 
-### Publishing ports
+### 4.2. Publishing ports
 
 `Discover` + `Action`
 
@@ -230,13 +230,13 @@ Let's destroy the `httpd` container:
 docker rm -f httpd
 ```
 
-## Docker Images (~30 minutes)
+## 5. Docker Images (~30 minutes)
 
 `Discover`
 
 In this part of the tutorial, you will build a Docker image for a **Centralized application** using the `python`
 
-### Dockerfile
+### 5.1. Dockerfile
 
 `Discover`
 
@@ -262,7 +262,7 @@ Create a file named `Dockerfile` from the `resources` folder.
 
 - What `CMD` is used for ?
 
-### Build the image
+### 5.2. Build the image
 
 `Action`
 
@@ -274,7 +274,7 @@ Build a Docker image by specifying the **tag** `uploader-app:latest` and the **f
 
 - How many layers your `uploader-app:latest` image contains ? Explain why ?
 
-### Run the container
+### 5.3. Run the container
 
 `Action`
 
@@ -290,15 +290,13 @@ In a second terminal, retrieve the IP address of uploader-app using:
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' uploader-app
 ```
 
-### Connect to you app
+### 5.4. Connect to you app
 
 `Action`
 
 Use your favorite web browser to connect to you application and start uploading some files (include screenshots in your report).
 
-
-
-## Data Persistance
+## 5.5. Data Persistance
 
 `Question`
 
@@ -306,6 +304,6 @@ Use your favorite web browser to connect to you application and start uploading 
 - Why ?
 - What can be done to prevent this issue ?
 
-## Go further
+## 6. Go further
 
 Explore Docker Compose to see how you can create service stacks and manage containers easily.
