@@ -2,22 +2,18 @@
 
   - Related course module: Distributed Systems
   - Tutorial scope: DS Design and Implementation
-  - Technologies: Linux, Middlware, Cloud Native
+  - Technologies: Linux, Docker, Cloud Native, Python
 
 ## Content
 
 This tutorial is divided into multiple parts:
 
-  - Part 0 - [Evironment Setup and Basics](tutorial0)
+  - Lab 0 - [Evironment Setup & Foundations: Deployment of a Centralized App](lab0)
 
 <!--
-  - Part 1 - [3-tier Application](tutorial1)
-  - Part 2 - [Microservice Design Patterns](tutorial2)
-  - Part 3 - [Message Oriented Middlware](tutorial3)
-  - Part 4 - [TBD](tutorial4)
-  - Part 5 - [TBD](tutorial5)
-  - Part 6 - [TBD](tutorial6)
-  - Part 7 - [TBD](tutorial7)
-  - Part 8 - [TBD](tutorial8)
-  - Part 9 - [TBD](tutorial9)
+  - Lab 1 - [Deployment of a 3-tier App](lab1)
+  - Lab 2 - [Microservice design patterns](lab2)
+  - Lab 3 - [Pub/Sub design pattern](lab3)
+  - Lab 4 - [Distributed K/V store using Raft](lab4)
+  - Lab 5 - [Introduction to MapReduce](lab5)
 -->
