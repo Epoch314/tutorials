@@ -1,4 +1,4 @@
-# DS 0: Environment Setup and Foundations
+# DS 0: Environment Setup and Foundations: Deployment of a Centralized App
 
   - Related course module: Distributed Systems
   - Tutorial scope: DS Design and Implementation
