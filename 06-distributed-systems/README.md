@@ -1,8 +1,19 @@
 # TP 6: Distributed Systems Hands-on
 
   - Related course module: Distributed Systems
-  - Tutorial scope: DS Design and Implementation
+  - Tutorial scope: Distributed Systems design and implementation
   - Technologies: Linux, Docker, Cloud Native, Python
+
+## Prerequisites
+
+To be able to do the labs in the best conditions, a Linux host is
+highly recommended.
+
+These labs could be easily done using:
+
+  - Cloud virtual machine
+  - Local virtual machine (checkout [this tutorial](VirtualBox.md))
+  - WSL for windows users (checkout [this tutorial](WSL.md))
 
 ## Content
 
