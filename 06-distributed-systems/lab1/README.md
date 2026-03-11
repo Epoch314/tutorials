@@ -30,7 +30,7 @@ Check out these tutorials on how to get a Linux OS up and running:
 I recommend that you create a text file with your favorite editor where you will continuously copy the commands and
 their output to help you with your Lab report.
 
-## 3. Create the App (~30 minutes)
+## 3. Create the App
 
 `Discover`
 
@@ -87,6 +87,8 @@ It's highly recommended to use the following structure in your project:
 
 `Action` + `Discover`
 
+In this Lab, we will be creating the Poll Application from Django documentation website: https://docs.djangoproject.com/en/6.0/intro/tutorial01/
+
 Setup your python development environment using your preferred development IDE:
 
 - PyCharm: https://www.jetbrains.com/pycharm/
@@ -100,7 +102,7 @@ Setup your python development environment using your preferred development IDE:
 
 `Action`
 
-- Create an application called `blog` using `django-admin` utility.
+- Create an application called `helloworld` using `django-admin` utility.
 
 Your project should now look like this:
 
@@ -109,8 +111,8 @@ Your project should now look like this:
 ├── docs
 │   └── .gitkeep
 ├── src
-│   └── blog
-│       ├── blog
+│   └── helloworld
+│       ├── helloworld
 │       │   ├── __init__.py
 │       │   ├── asgi.py
 │       │   ├── settings.py
@@ -126,6 +128,46 @@ Your project should now look like this:
 └── start.sh
 ```
 
-### 3.3. Create Docker image
+`Action`
 
+- Test your `Hello World` application using: `python3 manage.py runserver`
 
+### 3.4. Create the Poll App
+
+`Action` + `Discover`
+
+Follow instruction in: 
+https://docs.djangoproject.com/en/6.0/intro/tutorial01/#creating-the-polls-app to start building your application.
+
+## 4. Create Docker image
+
+`Action`
+
+Now we need to build our docker image. An example `Dockerfile` is provided [here](Dockerfile).
+
+To build an image, you can use for e.g.:
+
+```
+docker build -t pollapp .
+```
+
+`Action` + `Discover`
+
+In this documentation https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/gunicorn/ you can learn about how to use `Gunicorn` to run your `Django` application.
+
+The `start.sh` needs to be updated to use `gunicorn` to run your django application.
+
+## 5. Create and Run Docker compose
+
+`Action` + `Discover`
+
+You can learn more about docker compose here: https://docs.docker.com/compose/
+
+- Create and run a docker compose file with the following services:
+  - Django Application
+  - Postgres Database
+  - Nginx (or Traefik) reverse proxy
+
+> Please not that `settings.py` should be updated to successfully connect to the database. You can learn more about it here: https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+
+THE END.
