@@ -10,7 +10,6 @@ During this tutorial, we will learn few things like:
   - How to use the docker CLI (Command Line Interface) ?
   - Create your first docker container
   - Create your first docker image
-  - Create a Centralized application using docker compose
 
 > In the following, you will see `Discover` if you should play around
 > and see the documentation or test. You will see `Action` if you should
