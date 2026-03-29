@@ -1,0 +1,49 @@
+services:
+  ping:
+    container_name: ping
+    image: ping-app:latest
+    expose:
+      - "8080"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ping.rule=PathPrefix(`/ping`)"
+      - "traefik.http.services.ping.loadbalancer.server.port=8080"
+    networks:
+      - backend
+
+  traefic:
+    container_name: traefic
+    image: traefik:v3
+    command:
+      - "--api.dashboard=true"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--log.level=INFO"
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - backend
+      - frontend
+    depends_on:
+      - ping
+
+networks:
+  backend:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.1.1.0/24
+    driver_opts:
+      com.docker.network.bridge.name: privnet
+  frontend:
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.100.0/24
+    driver_opts:
+      com.docker.network.bridge.name: pubnet

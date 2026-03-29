@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Ping/Pong Microservice API",
+    "version": "1.0.0",
+    "description": "Ping/Pong service"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080"
+    }
+  ],
+  "paths": {
+    "/ping": {
+      "get": {
+        "summary": "Ping me",
+        "responses": {
+          "200": {
+            "description": "Pong, up and running",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ping"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Ping": {
+        "type": "object",
+        "properties": {
+          "pong": {
+            "type": "string",
+            "example": "http://192.168.1.10:8080"
+          }
+        }
+      }
+    }
+  }
+}
