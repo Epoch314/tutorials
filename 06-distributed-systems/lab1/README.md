@@ -1,4 +1,4 @@
-# DS 1: Deployment of a 3-tier Application
+# DS 1: Foundations 2 - Deployment of a 3-tier App
 
   - Related course module: Distributed Systems
   - Tutorial scope: DS Design and Implementation
