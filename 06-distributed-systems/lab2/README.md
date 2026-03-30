@@ -55,7 +55,7 @@ The microservice you will be developping will be a dummy app that if ping'ed rep
 
 `Discover`
 
-You can find in this repo, a [basic OpenAPI specification](./app.yaml) of the RESTful API of our app.
+You can find in this repo, a [basic OpenAPI specification](./ping.yaml) of the RESTful API of our app.
 
 If needed, you can use [this app](https://jsontotable.org/openapi-yaml-to-json) to convert YAML to JSON.
 
