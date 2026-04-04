@@ -22,9 +22,9 @@ This tutorial is divided into multiple parts:
   - Lab 0 - [Foundations 1: Deployment of a Centralized App](lab0)
   - Lab 1 - [Foundations 2: Deployment of a 3-tier App](lab1)
   - Lab 2 - [Microservice design patterns](lab2)
+  - Lab 3 - [Pub/Sub design patterns](lab3)
 
 <!--
-  - Lab 3 - [Pub/Sub design pattern](lab3)
   - Lab 4 - [Distributed K/V store using Raft](lab4)
   - Lab 5 - [Introduction to MapReduce](lab5)
 -->
