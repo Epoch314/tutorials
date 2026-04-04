@@ -52,7 +52,7 @@ Explore the following documentation:
  1. Include the service startup logs in your report
  1. Connect to RabbitMQ management dashboard and explore it
 
-> <strong>Note:</strong> For the rest of this Lab we will use exclusivly Pika Python Clients
+> <strong>Note:</strong> For the rest of this Lab we will use exclusively Pika Python Clients
 
 ## 4. Publish/Subscribe design patterns
 
