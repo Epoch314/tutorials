@@ -1,10 +1,17 @@
-# Tutorials Project
+# Labs Project
 
-This repo gathers all tutorials for Convergent Services and Technologies course.
+This repo gathers Tutorials and Labs about Cloud and Networking.
 
 1. [Linux Containers in Practice: a Docker flavor](01-containers-in-practice)
-2. [An Introduction to Software Defined Networking (SDN)](02-software-defined-networking)
-3. [An Introduction to Container Management and Orchestration](03-container-orchestration)
+1. [An Introduction to Software Defined Networking (SDN)](02-software-defined-networking)
+1. [An Introduction to Container Management and Orchestration](03-container-orchestration)
+1. [Fifth Generation Mobile Technologies](04-fifth-gen-mobile-technologies/)
+1. [Simple Networking Application Deployment](05-simple-cnf-deployment/)
+1. [Distributed Systems Labs](06-distributed-systems/)
+    1. [Foundations 1 - Deployment of a Centralized App](06-distributed-systems/lab0/)
+    1. [Foundations 2 - Deployment of a 3-tier App](06-distributed-systems/lab1/)
+    1. [Microservice design patterns](06-distributed-systems/lab2/)
+    1. [Publish/Subscribe design patterns](06-distributed-systems/lab3/)
 
 Voucher Link:
 
