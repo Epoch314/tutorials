@@ -6,11 +6,11 @@
 
 ![Publish/Subscribe](./res/pubsub.png)
 
-During this tutorial, we will learn few things like:
+During this lab, we will learn few things like:
 
   - How to install and configure a communication broker
-  - How to develop an event-based application
   - Deploy the service using docker compose
+  - Explore different pub/sub design patterns to develop an event-based application
 
 > <strong>Note:</strong> In the following, you will see `Discover` if you should play around
 > and see the documentation or test. You will see `Action` if you should
@@ -33,8 +33,6 @@ Check out [Lab0: Foundations 1 - Deployment of a Centralized App](../lab0/) to l
 
 I recommend that you create a text file with your favorite editor where you will continuously copy the commands and
 their output to help you with your Lab report.
-
-> <strong>Note:</strong> Your report should include a <strong>link to your project's git repo</strong>
 
 ## 3. RabbitMQ deployment
 
