@@ -1,4 +1,4 @@
-# TP 6: Distributed Systems Hands-on
+# TP 6: Distributed Systems Labs
 
   - Related course module: Distributed Systems
   - Tutorial scope: Distributed Systems design and implementation
@@ -23,8 +23,9 @@ This tutorial is divided into multiple parts:
   - Lab 1 - [Foundations 2: Deployment of a 3-tier App](lab1)
   - Lab 2 - [Microservice design patterns](lab2)
   - Lab 3 - [Pub/Sub design patterns](lab3)
+  - Lab 4 - [Cluster Orchestration and Management](lab4)
 
 <!--
-  - Lab 4 - [Distributed K/V store using Raft](lab4)
-  - Lab 5 - [Introduction to MapReduce](lab5)
+  - Lab 4 - [Distributed K/V store using Raft or Paxos](lab5)
+  - Lab 5 - [Introduction to MapReduce](lab6)
 -->
