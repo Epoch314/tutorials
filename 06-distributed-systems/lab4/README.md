@@ -40,10 +40,12 @@ their output to help you with your Lab report.
 
 `Discover`
 
-To install a Kubernetes cluster for this tutorial, we are going to setup a lightweight Kubernetes distribution called *k3s*. Application deployment on Kubernetes is simplified using Helm.
+To install a Kubernetes cluster for this tutorial, you are going to setup a lightweight Kubernetes distribution using
+either *k3s* or *kind
 
 - https://kubernetes.io/
 - https://k3s.io/
+- https://kind.sigs.k8s.io/
 - https://kubernetes.io/docs/concepts/workloads/controllers/
 - https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
@@ -65,7 +67,7 @@ To install a Kubernetes cluster for this tutorial, we are going to setup a light
 
 Do the following steps:
 
-- Install *k3s* locally on you machine
+- Install either *k3s* or *kind* locally on you machine
 - Check the installation status (e.g. by listing your cluster nodes)
 - Get the node information using the `-o wide` flag
 - (<strong>Optional</strong>) Install the *dashboard* by following instructions [here](https://headlamp.dev/) (In-cluster - YAML Configuration)
