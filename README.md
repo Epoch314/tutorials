@@ -12,6 +12,7 @@ This repo gathers Tutorials and Labs about Cloud and Networking.
     1. [Foundations 2 - Deployment of a 3-tier App](06-distributed-systems/lab1/)
     1. [Microservice design patterns](06-distributed-systems/lab2/)
     1. [Publish/Subscribe design patterns](06-distributed-systems/lab3/)
+    1. [Cluster Orchestration and Management](06-distributed-systems/lab4/)
 
 Voucher Link:
 
