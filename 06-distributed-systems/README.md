@@ -11,7 +11,7 @@ highly recommended.
 
 These labs could be easily done using:
 
-  - Cloud virtual machine
+  - Tiny cloud virtual machine
   - Local virtual machine (checkout [this tutorial](VirtualBox.md))
   - WSL for windows users (checkout [this tutorial](WSL.md))
 
