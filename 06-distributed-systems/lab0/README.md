@@ -219,7 +219,7 @@ By default, ports exposed by a container are only accessible by containers from 
 Test if your `HTTP` port is open from the outside world using:
 
 ```console
-curl ifconfig.co/port/80
+curl localhost:<EXPOSED_PORT>
 ```
 
 `Question`
